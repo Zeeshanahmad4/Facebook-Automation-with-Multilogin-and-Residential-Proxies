@@ -4,7 +4,7 @@ BlackBot already warmup more then 15000 Facebook profiles using Multilogin.
 
 Bot can automate every action on facebook Profile.
 
-I named it #blackbot
+I named it #Blackbot
 
 
 
@@ -38,9 +38,11 @@ I named it #blackbot
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 ## Demo
-![Code](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/Code_snap.PNG)
+![Demo](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/MyVideo.gif)
+
 ## Code
 ![Code](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/Code_snap.PNG)
+
 ## Profiles list to input i automated more then 5k Profiles with this bot.
 ![profiles_input](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/Profiles_snaps.PNG)
 
