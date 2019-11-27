@@ -11,7 +11,7 @@ I am calling my Bot #blackbot
 <br />
 <p align="center">
   <a href="https://github.com/Zeeshanahmad4/BOT--Hydrafacial">
-    <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/multimedia/bot-136-504893.png" alt="Logo" width="120" height="130">
+    <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/multimedia/bot-136-504893.png" alt="Logo" width="120" height="128">
   </a>
   <h3 align="center">Bot/Automation</h3>
   <h3 align="center">Automate Facebook Profiles with Multilogin and Ilumnati Proxies</a> </h3>
