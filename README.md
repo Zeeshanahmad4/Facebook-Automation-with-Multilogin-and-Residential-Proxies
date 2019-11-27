@@ -1,9 +1,10 @@
-# Facebook automation + Multilogin + Ilumnati proxies
+# Facebook automation + Multilogin + Resendetial proxies
 Bot is for warming up facebook profile means it uses facebook on behalf of humans for genrating a pattren to facebook algortihum so it knows that Profiles are active.
 BlackBot already warmup more then 15000 Facebook profiles using Multilogin.
 
 Bot can automate every action on facebook Profile.
-I am calling my Bot #blackbot
+
+I named it #blackbot
 
 
 
@@ -14,7 +15,7 @@ I am calling my Bot #blackbot
     <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/multimedia/bot-136-504893.png" alt="Logo" width="120" height="128">
   </a>
   <h3 align="center">Bot/Automation</h3>
-  <h3 align="center">Automate Facebook Profiles with Multilogin and Ilumnati Proxies</a> </h3>
+  <h3 align="center">Automate Facebook Profiles with Multilogin and Proxies</a> </h3>
 </p>
 
 
@@ -69,7 +70,7 @@ git clone https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilog
 ```sh
 pip install selenium,request,Beautifullsoup
 
-also install multilogin and lumnati proxy manager
+I am asuming you already install and set up multilogin and Proxies.
 ```
 
 <!-- USAGE EXAMPLES -->
