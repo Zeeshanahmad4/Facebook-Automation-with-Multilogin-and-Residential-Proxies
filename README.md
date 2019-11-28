@@ -76,7 +76,7 @@ I am asuming you already install and set up multilogin and Proxies.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-YOu can warm up your profiles, automate all facebook actin using this bot.
+YOu can warm up your profiles, automate all facebook action using this bot.
 The bot is for warming up facebook profile means it uses facebook on behalf of humans for generating a pattern to facebook algorithm so it knows that Profiles are active.
 BlackBox already warms up more than 15000 Facebook profiles using Multilogin.
 
