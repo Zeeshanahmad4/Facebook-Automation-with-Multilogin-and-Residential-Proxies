@@ -9,11 +9,12 @@ I named it #Blackbot
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Zeeshanahmad4/BOT--Hydrafacial">
+  <a href="https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies">
     <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/multimedia/bot-136-504893.png" alt="Logo" width="120" height="128">
   </a>
   <h3 align="center">Bot/Automation</h3>
-  <h3 align="center">Automate Facebook Profiles with Multilogin and Proxies</a> </h3>
+  <h3 align="center">Automate Facebook Profiles with Multilogin and Proxies</a> <br>
+   You can contact me for any queries setting up the project i will be happy to help.</h3>
 </p>
 
 
