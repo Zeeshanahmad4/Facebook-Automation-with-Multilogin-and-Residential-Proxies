@@ -1,4 +1,9 @@
 # Facebook automation + Multilogin + Resendetial proxies
+ [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) <br>
+ ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+  ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+
 The bot is for warming up facebook profile means it uses facebook on behalf of humans for generating a pattern to facebook algorithm so it knows that Profiles are active. BlackBox already warms up more than 15000 Facebook profiles using Multilogin.
 
 The bot can automate every action on facebook Profile.
