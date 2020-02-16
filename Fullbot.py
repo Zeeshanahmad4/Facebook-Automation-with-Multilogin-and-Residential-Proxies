@@ -8,7 +8,6 @@ from selenium.webdriver.common.by import By
 import random
 
 
-# In[12]:
 flagg=False
 counter=0
 def wait(c,d):
