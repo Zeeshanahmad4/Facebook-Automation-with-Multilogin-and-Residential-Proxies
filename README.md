@@ -4,8 +4,7 @@
   ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
-Bot is for warming up and using facebook profiles. It automate all the manuall actions we do when on facebbok so facebook algorithm knows that Profiles are active. This Bot already warmed up more than 15000 Facebook profiles using Multilogin.
-The bot can automate every action on facebook Profile.
+The Bot is for warming up and using facebook profiles. It can automate all the actions of facebook user so facebook algorithm can know that the Profiles are active. This Bot already warmed up more than 15000 Facebook profiles using Multilogin.
 
 <!-- PROJECT LOGO -->
 <br />
@@ -13,9 +12,9 @@ The bot can automate every action on facebook Profile.
   <a href="https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies">
     <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/resources/MLA%20LOGO.png" alt="Logo" width="140" height="220">
   </a>
-  <h3 align="center">Bot/Automation</h3>
-  <h3 align="center">Automate Facebook Profiles with Multilogin and Proxies</a> <br>
-   You can contact me for any queries setting up the project i will be happy to help.</h3>
+  <h3 align="center">Multilogin Automation</h3>
+  <h3 align="center">Automating Facebook Profiles with Multilogin and Proxies</a> <br>
+   You can contact me for any queries, for setting up the project</h3>
 </p>
 
 
