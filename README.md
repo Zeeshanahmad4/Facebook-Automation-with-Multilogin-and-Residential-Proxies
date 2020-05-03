@@ -14,11 +14,12 @@ The Bot is for warming up and using facebook profiles. It can automate all the a
   </a>
   <h3 align="center">Multilogin Automation</h3>
   <h3 align="center">Automating Facebook Profiles with Multilogin and Proxies</a> <br>
-   You can contact me for any queries, for setting up the project</h3>
+   You can contact me for any queries and for setting up the project</h3>
 </p>
 
 # Demo
 ![Demo](https://media.giphy.com/media/iJ6hoHd86S2B6NtcuT/giphy.gif)
+
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -35,6 +36,31 @@ The Bot is for warming up and using facebook profiles. It can automate all the a
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
+
+
+## Features
+
+-   Dynamic Scrolling
+-   Random Delays
+-   Watching Facebook stories
+-   Clicking on Random Posts
+-   Clicking on sponsored ads(ad will open in a new windows)
+-   Checking Users Profiles
+-   Reading Comments
+-   Wachting Videos
+-   Doing Likes
+-   Doing Comments
+-   Random actions for every Profiles
+-   Handling exceptions or blocked Profiles
+-   Track of every Profile
+
+## To Do
+-  Sending requests
+-  Sending Messages
+-  Notification checking
+-  Uploading a Post
+
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
