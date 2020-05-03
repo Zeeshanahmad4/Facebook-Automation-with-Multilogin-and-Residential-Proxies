@@ -18,7 +18,7 @@ The Bot is for warming up and using facebook profiles. It can automate all the a
 </p>
 
 # Demo
-![Demo](https://recordit.co/oysYXpSNZQ)
+![Demo](https://recordit.co/oysYXpSNZQ.gif)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
