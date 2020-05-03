@@ -4,12 +4,8 @@
   ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
-The bot is for warming up facebook profile means it uses facebook on behalf of humans for generating a pattern to facebook algorithm so it knows that Profiles are active. BlackBox already warms up more than 15000 Facebook profiles using Multilogin.
-
+Bot is for warming up and using facebook profiles. It automate all the manuall actions we do when on facebbok so facebook algorithm knows that Profiles are active. This Bot already warmed up more than 15000 Facebook profiles using Multilogin.
 The bot can automate every action on facebook Profile.
-
-I named it #Blackbot
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -105,6 +101,7 @@ BlackBox already warms up more than 15000 Facebook profiles using Multilogin.
 15. Notification checking
 16. do_like()
 17. do_comments()
+generating a pattern to facebook algorithm so it knows that Profiles are active
 ```
 
 ## Includes Files
