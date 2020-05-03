@@ -10,7 +10,7 @@ The Bot is for warming up and using facebook profiles. It can automate all the a
 <br />
 <p align="center">
   <a href="https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies">
-    <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/resources/MLA%20LOGO.png" alt="Logo" width="140" height="220">
+    <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/multimedia/fullcrop.png" alt="Logo" width="140" height="220">
   </a>
   <h3 align="center">Multilogin Automation</h3>
   <h3 align="center">Automating Facebook Profiles with Multilogin and Proxies</a> <br>
