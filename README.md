@@ -17,11 +17,13 @@ The Bot is for warming up and using facebook profiles. It can automate all the a
    You can contact me for any queries, for setting up the project</h3>
 </p>
 
-
+# Demo
+![Demo](https://recordit.co/oysYXpSNZQ)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
+* [Features](#Features)
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
