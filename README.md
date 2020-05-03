@@ -15,7 +15,7 @@ I named it #Blackbot
 <br />
 <p align="center">
   <a href="https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies">
-    <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/resources/MLA%20LOGO.png" alt="Logo" width="120" height="128">
+    <img src="https://github.com/Zeeshanahmad4/My-Path-to-Python/blob/master/resources/MLA%20LOGO.png" alt="Logo" width="140" height="220">
   </a>
   <h3 align="center">Bot/Automation</h3>
   <h3 align="center">Automate Facebook Profiles with Multilogin and Proxies</a> <br>
