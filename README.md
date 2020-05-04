@@ -59,7 +59,7 @@ The Bot is for warming up and using facebook profiles. It can automate all the a
 -  Sending Messages
 -  Notification checking
 -  Uploading a Post
-
+-  MultiThreading
 
 
 <!-- ABOUT THE PROJECT -->
