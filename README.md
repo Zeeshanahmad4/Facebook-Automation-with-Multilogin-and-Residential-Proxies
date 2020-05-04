@@ -16,10 +16,10 @@ The Bot is for warming up and using facebook profiles. It can automate all the a
   <h3 align="center">Automating Facebook Profiles with Multilogin and Proxies</a> <br>
    You can contact me for any queries and for setting up the project</h3>
 </p>
-
+<!-- 
 # Demo
 ![Demo](https://media.giphy.com/media/iJ6hoHd86S2B6NtcuT/giphy.gif)
-
+-->
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
