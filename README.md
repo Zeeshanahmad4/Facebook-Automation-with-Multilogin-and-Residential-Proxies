@@ -77,9 +77,6 @@
 ## Code
 ![Code](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/Code_snap.PNG)
 
-## Profiles list
-![profiles_input](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/Profiles_snaps.PNG)
-
 
 ### Built With
 * [Python](https://www.python.org/)
