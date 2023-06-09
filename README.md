@@ -16,14 +16,15 @@
     <code>Zee#0291</code>
   </a>
   <span>┃</span>
-  <a href="" style="margin-top: 12px;">
-    <img alt="Abhishek's Discord" width="30px" src="https://edent.github.io/SuperTinyIcons/images/svg/skype.svg" />
-    <code>zeeshan.ahmad400</code>
+  <a href="https://www.upwork.com/freelancers/zeeshanahmad291" style="margin-top: 12px;">
+    <img alt="Abhishek's Discord" width="80px" src="https://github.com/Zeeshanahmad4/Zeeshanahmad4/blob/main/upwork.svg" />
+    <code>Zeeshan Ahmad</code>
   </a>
-
+  
   <br />
   <strong>For discussion, queries and freelance work. Do reach me.👆👆👆</strong>
 </div>
+
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
