@@ -1,10 +1,23 @@
 # Facebook Automation Bot (Multilogin + Residential Proxies)
 <p align="center">
-  <a href="https://www.multilogin.com/"><img alt="Multilogin" src="https://img.shields.io/badge/Multilogin-API%20Ready-7b61ff?style=for-the-badge"></a>
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white&style=for-the-badge">
   <img alt="Selenium" src="https://img.shields.io/badge/Selenium-Automation-43B02A?logo=selenium&logoColor=white&style=for-the-badge">
   <img alt="Proxies" src="https://img.shields.io/badge/Residential_Proxies-Bright%20Data%2FAny-000?style=for-the-badge">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge">
+</p>
+
+<h2 align="center">Contact</h2>
+
+<p align="center">
+  <a href="https://www.bitbash.dev/">
+    <img src="https://img.shields.io/badge/🌐-Website-0a0a0a?style=for-the-badge" />
+  </a>
+  <a href="https://discord.gg/zX7frTbx">
+    <img src="https://img.shields.io/badge/💬-Discord-5865F2?style=for-the-badge" />
+  </a>
+  <a href="https://t.me/devpilot1">
+    <img src="https://img.shields.io/badge/✈️-Telegram-2CA5E0?style=for-the-badge" />
+  </a>
 </p>
 
 > Automate **human-like Facebook activity at scale** using Multilogin profiles + residential proxies.
@@ -46,12 +59,19 @@ The system is built for **scalability, randomization, and reliability**, making 
 ---
 ## Architecture
 <p align="center">
-  <img src="Architecturee.png" alt="Hero Section" width="800">
+  <img src="architecturee.png" alt="Hero Section" width="800">
 </p>
+
 ##  Demo
 
-- [demo](Myvideo.gif)
-- Screenshots/logs available in `logs/` and `data/state/`
+<p align="center">
+  <img src="Myvideo.gif" alt="Hero Section" width="800">
+</p>
+
+<p align="center">
+  <img src="Code_snap.PNG" alt="Hero Section" width="800">
+</p>
+
 ---
 ##  Roadmap
 - [ ] Friend requests & messaging
@@ -60,12 +80,14 @@ The system is built for **scalability, randomization, and reliability**, making 
 - [ ] Multiprocessing worker pool
 - [ ] Web dashboard with metrics
 ---
-## :handshake: Contributing
-1. Fork the repo
+## ​ Contact
+
+- Website: [BitBash.dev](https://www.bitbash.dev/)
+- Discord Server [Appilot Community](https://discord.gg/zX7frTbx)
+- Telegram: [@devpilot1](https://t.me/devpilot1)
 
 
---
 
-
-
-
+<p align="center">
+  <img src="footter.png" alt="Hero Section" width="800">
+</p>
