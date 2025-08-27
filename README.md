@@ -1,102 +1,70 @@
-# Facebook automation + Multilogin + Resendetial proxies
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
+# Facebook Automation Bot (Multilogin + Residential Proxies)
+<p align="center">
+  <a href="https://www.multilogin.com/"><img alt="Multilogin" src="https://img.shields.io/badge/Multilogin-API%20Ready-7b61ff?style=for-the-badge"></a>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white&style=for-the-badge">
+  <img alt="Selenium" src="https://img.shields.io/badge/Selenium-Automation-43B02A?logo=selenium&logoColor=white&style=for-the-badge">
+  <img alt="Proxies" src="https://img.shields.io/badge/Residential_Proxies-Bright%20Data%2FAny-000?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge">
+</p>
 
-* [Features](#Features)
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
+> Automate **human-like Facebook activity at scale** using Multilogin profiles + residential proxies.
+> Features include randomized browsing, ad discovery, stories/videos interaction, and robust per-profile tracking.
 
+<p align="center">
+  <img src="poster.png" alt="Hero Section" width="800">
+</p>
 
-## Features
+##  Overview
+This project is a **Facebook Automation Bot** powered by **Python, Selenium, Multilogin APIs, and Residential Proxies**.
+It simulates **human-like behavior**—scrolling feeds, watching stories, liking, commenting, and engaging with content—while managing multiple profiles safely through Multilogin.
+The system is built for **scalability, randomization, and reliability**, making it suitable for research, testing, and internal automation workflows.
 
--   Dynamic Scrolling
--   Random Delays
--   Watching Facebook stories
--   Clicking on Random Posts
--   Clicking on sponsored ads(ad will open in a new windows)
--   Checking Users Profiles
--   Reading Comments
--   Wachting Videos
--   Doing Likes
--   Doing Comments
--   Random actions for every Profiles
--   Handling exceptions or blocked Profiles
--   Track of every Profile
+---
+##  Features
+- **Dynamic scrolling** with realistic scroll physics
+- **Randomized delays** & human-like action jitter
+- **Watch stories & videos** with adjustable dwell times
+- **Click random posts** & **sponsored ads** (opens in new window)
+- **Check profiles & read comments** like a real user
+- **Like & comment posts** with customizable templates
+- **Per-profile randomization** for unique patterns
+- **Exception handling** for checkpoints & blocked accounts
+- **Profile tracking**: logs, state, and reports 
+## **Planned (To-Do):**
+- Friend requests
+- Sending messages
+- Notification checking
+- Uploading posts
+- Multi-threaded profile automation
+---
+##  Tech Stack
+- **Python 3.10+** – core logic
+- **Selenium** – browser automation
+- **Multilogin Local API** – profile management
+- **Residential Proxies** (Bright Data / Luminati / others)
+- **Requests** + **BeautifulSoup** – supporting parsers & HTTP calls
+---
+## Architecture
+<p align="center">
+  <img src="Architecturee.png" alt="Hero Section" width="800">
+</p>
+##  Demo
 
-## To Do
--  Sending requests
--  Sending Messages
--  Notification checking
--  Uploading a Post
--  MultiThreading
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-## Demo
-![Demo](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/MyVideo.gif)
-
-## Code
-![Code](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/blob/master/Code_snap.PNG)
-
-
-### Built With
-* [Python](https://www.python.org/)
-* [Beautifullsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-* [Multilogin Apis](https://multilogin.com/)
-* [luminati Proxies](https://luminati.io/l)
-* [Selenium](https://selenium-python.readthedocs.io/)
-* [request](https://docs.python.org/3/library/urllib.html)
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-### Prerequisites
-
-### Installation
-1. Clone the repo
-```sh
-git clone https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies.git
-```
-
-2. Install python packages
-```sh
-pip install selenium,request,Beautifullsoup
-
-I am asuming you already install and set up multilogin and Proxies.
-```
-
-<!-- USAGE EXAMPLES -->
-## Usage
+- [demo](Myvideo.gif)
+- Screenshots/logs available in `logs/` and `data/state/`
+---
+##  Roadmap
+- [ ] Friend requests & messaging
+- [ ] Notification watcher
+- [ ] Post uploader
+- [ ] Multiprocessing worker pool
+- [ ] Web dashboard with metrics
+---
+## :handshake: Contributing
+1. Fork the repo
 
 
-<!-- ROADMAP -->
-## Roadmap
-See the [open issues](https://github.com/Zeeshanahmad4/Facebook-Automation-bot-with-Multilogin-and-Proxies/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
-
+--
 
 
 
