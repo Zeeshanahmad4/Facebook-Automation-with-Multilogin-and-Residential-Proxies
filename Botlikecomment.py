@@ -1,233 +1,202 @@
-#driver.execute_script("arguments[0].click();", comm)
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-
-
-
-# In[348]:
-
-
-#----------------------------------Likes----------------
-
-
-# In[349]:
-
-
-
-def do_like():
-    try:
-        top_feed = driver.find_element_by_id("m_newsfeed_stream")
-        newsfeed = top_feed.find_element_by_id("MNewsFeed")
-        Sections = newsfeed.find_elements_by_tag_name("section")
-        print("No of Sections found:",len(Sections))
-
-        articles=[]
-        for section in Sections:
-            try:
-                if(section.find_elements_by_tag_name("article")!=[]):
-                    articles.extend(section.find_elements_by_tag_name("article"))
-            except:
-                pass
-        print("No of Articles found: ",len(articles))
-        runns=random.randint(3,4)
-        print("No of likes to be done:",runns)
-        Done=[]
-        for _ in range(runns):
-            while(1):
-                a_index=random.randint(0,(len(articles)-1))
-                if a_index not in Done:
-                    break
-            Done.append(a_index)
-            like_obj=articles[a_index].find_elements_by_class_name("_52jj")[0]
-            like_object=like_obj.find_element_by_tag_name('div')
-
-            #like_object.click()
-            driver.execute_script("arguments[0].click();", like_object)
-            sleep(1.5)
-            uah=driver.find_elements_by_class_name("_uah")
-            uah_selector=random.randint(0,1)
-            to_click=uah[uah_selector].find_element_by_tag_name("i")
-            driver.execute_script("arguments[0].click();", to_click)
-            print(_+1," like done")
-            sleep(2)
-
-    except:
-        pass
-
-
-
-
-# In[350]:
-
-
-#-----------------------------------------------------------------------
-
-
-# In[ ]:
-
-
-
-
-
-# In[351]:
-
-
-#-----------------------------Comments----------------------------------
-
-
-# In[373]:
-
-
-def do_comment():
-    Done=[]
-    runns=random.randint(3,4)
-    print("No of comments to be done=",runns)
-    for _ in range(runns):
-        try:
-            if _==0:
-                driver.get("https://www.facebook.com/")
-                sleep(2)
-            scrooling_dowon(9,13)
-            sleep(2)
-            top_feed = driver.find_element_by_id("m_newsfeed_stream")
-            newsfeed = top_feed.find_element_by_id("MNewsFeed")
-            Sections = newsfeed.find_elements_by_tag_name("section")
-
-            articles=[]
-            for section in Sections:
-                try:
-                    if(section.find_elements_by_tag_name("article")!=[]):
-                        articles.extend(section.find_elements_by_tag_name("article"))
-                except:
-                    pass
-
-            commentable=[]
-            for article in articles:
-                try:
-                    if(int(article.find_element_by_class_name("_1j-c").text.split(" ")[0])>20):
-                        commentable.append(article)
-                except:
-                    pass
-
-
-
-            while(1):
-                c_index=random.randint(0,len(commentable)-1)
-                if c_index not in Done:
-                    break
-            Done.append(c_index)
-            comm=commentable[c_index].find_element_by_class_name("_15kq")
-            driver.execute_script("arguments[0].click();", comm)
-
-            sleep(5)
-
-            scrooling_dowon(4,6)
-            sleep(1)
-
-            comments=[]
-            ff=driver.find_elements_by_class_name("_14v5")
-            for div in ff:
-                try:
-                    comments.append(div.find_element_by_class_name("_2b06").find_elements_by_tag_name("div")[1].text)
-                except:
-                    pass
-            for ___ in range(0,(len(comments)-1)):
-
-                comment=comments[random.randint(0,len(comments)-1)] 
-                if comment.isascii():
-                    break
-
-            comment+=" :)"
-
-            comment_box=driver.find_element_by_id("composerInput")
-            comment_box.send_keys(comment)
-            sleep(2)
-            submitt=driver.find_element_by_xpath('//button[@type="submit"]')
-            submitt.send_keys(Keys.ENTER)
-            sleep(3)
-            print(_+1,"Comment done")
-            driver.get("https://www.facebook.com/")
-            sleep(2)
-        except:
-            pass
-
-
-# In[353]:
-
-
-#----------------------------------------------------------------------------------------------
-
-
-# In[ ]:
-
-
-
-
-
-# In[374]:
-
-
+# bot_functions.py
 from selenium import webdriver
-from selenium.webdriver.firefox import options
-import requests
-import csv
-from time import sleep
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import random
+import time
+import requests
 
-rows=[]
-# Scrooling fun
-def scrooling_dowon(a,b):
-    number = random.randint(a,b)
-    body = driver.find_element_by_tag_name("body")
-    for j in range(number):
-        body.send_keys(Keys.PAGE_DOWN)
-        sleep(.5)
+class FacebookBot:
+    def __init__(self):
+        self.driver = None
+        self.mla_url = 'http://127.0.0.1:35000/api/v1/profile/start?automation=true&profileId='
     
-
-
-def wait(c,d):
-    timewait = random.randint(c,d)
-    sleep(timewait)
-
-
-
-#TODO replace with existing profile ID. Define the ID of the browser profile, where the code will be executed.
-with open("profiles.csv", "r") as csvfile:
-    reader = csv.reader(csvfile)
-    for row in reader:
-        rows.append(row)
-    for row in rows:
-        print("{}  {}".format(row[1],row[0]))
-        mla_profile_id = row[0]
-        mla_url = 'http://127.0.0.1:35000/api/v1/profile/start?automation=true&profileId='+mla_profile_id
-        """
-        Send GET request to start the browser profile by profileId. Returns response in the following format: '{"status":"OK","value":"http://127.0.0.1:XXXXX"}', where XXXXX is the localhost port on which browser profile is launched. Please make sure that you have Multilogin listening port set to 35000. Otherwise please change the port value in the url string
-        """
-        resp = requests.get(mla_url)
+    def start_profile(self, profile_id):
+        """Start browser profile using Multilogin"""
+        resp = requests.get(self.mla_url + profile_id)
         json = resp.json()
-        print (json)
-        #Define DesiredCapabilities
-        opts = options.DesiredCapabilities()
-        #Instantiate the Remote Web Driver to connect to the browser profile launched by previous GET request
-        driver = webdriver.Remote(command_executor=json['value'], desired_capabilities={})
-
-    #Perform automation
-        driver.get('https://www.facebook.com/')
-        sleep(2)
-
-        scrooling_dowon(20,25)
-
+        self.driver = webdriver.Remote(command_executor=json['value'], desired_capabilities={})
+        self.driver.get('https://www.facebook.com/')
+        time.sleep(random.uniform(2, 5))
+    
+    def close_profile(self):
+        """Close current browser profile"""
+        if self.driver:
+            self.driver.quit()
+    
+    def random_delay(self, min_sec=1, max_sec=10):
+        """Random delay between actions"""
+        time.sleep(random.uniform(min_sec, max_sec))
+    
+    def scroll_randomly(self, min_scrolls=3, max_scrolls=10):
+        """Dynamic scrolling with random page up/down"""
+        scrolls = random.randint(min_scrolls, max_scrolls)
+        body = self.driver.find_element(By.TAG_NAME, "body")
         
-        # Comments and likes
-        do_like()
-        do_comment()
-
-        driver.close()
-
-
+        for _ in range(scrolls):
+            if random.choice([True, False]):
+                body.send_keys(Keys.PAGE_DOWN)
+            else:
+                body.send_keys(Keys.PAGE_UP)
+            self.random_delay(0.5, 1.5)
+    
+    def watch_stories(self):
+        """Watch Facebook stories"""
+        try:
+            story_tray = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//*[@id='story_tray']/div[2]"))
+            )
+            story_tray.click()
+            self.random_delay(35, 50)  # Watch time
+            
+            # Try to close story viewer
+            try:
+                close_btn = self.driver.find_element(By.XPATH, "//*[@id='story_bucket_viewer_content']/div/div[3]/span[2]/i")
+                close_btn.click()
+            except:
+                self.driver.get("https://m.facebook.com/")
+                
+        except Exception as e:
+            print(f"Error watching stories: {e}")
+            self.driver.get("https://www.facebook.com/")
+    
+    def click_random_posts(self):
+        """Click on random posts in newsfeed"""
+        try:
+            articles = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_all_elements_located((By.TAG_NAME, "article"))
+            )
+            
+            if articles:
+                random.choice(articles).click()
+                self.random_delay(8, 15)
+                self.driver.execute_script("window.history.go(-1)")
+                
+        except Exception as e:
+            print(f"Error clicking random posts: {e}")
+    
+    def click_sponsored_ads(self):
+        """Click on sponsored ads"""
+        try:
+            articles = self.driver.find_elements(By.TAG_NAME, "article")
+            for article in articles:
+                try:
+                    # Check if article contains an ad
+                    article.find_element(By.TAG_NAME, "iframe")
+                    ad_link = article.find_element(By.CLASS_NAME, "_2rea")
+                    ad_link.click()
+                    
+                    # Switch to new tab
+                    self.driver.switch_to.window(self.driver.window_handles[1])
+                    self.random_delay(10, 25)
+                    
+                    # Close ad tab and switch back
+                    self.driver.close()
+                    self.driver.switch_to.window(self.driver.window_handles[0])
+                    break
+                    
+                except:
+                    continue
+                    
+        except Exception as e:
+            print(f"Error clicking ads: {e}")
+    
+    def check_user_profiles(self):
+        """Click on random user profiles"""
+        try:
+            articles = self.driver.find_elements(By.TAG_NAME, "article")
+            if articles:
+                profile = random.choice(articles).find_element(By.TAG_NAME, "strong")
+                profile.click()
+                self.random_delay(10, 15)
+                self.scroll_randomly(2, 5)
+                self.driver.execute_script("window.history.go(-1)")
+                
+        except Exception as e:
+            print(f"Error checking user profiles: {e}")
+    
+    def read_comments(self):
+        """Open and read comments"""
+        try:
+            articles = self.driver.find_elements(By.TAG_NAME, "article")
+            if articles:
+                comment_btn = articles[0].find_elements(By.CLASS_NAME, "_52jj")[1]
+                comment_btn.click()
+                self.random_delay(5, 8)
+                self.scroll_randomly(5, 10)
+                self.driver.execute_script("window.history.go(-1)")
+                
+        except Exception as e:
+            print(f"Error reading comments: {e}")
+    
+    def watch_videos(self):
+        """Watch random videos"""
+        try:
+            video = self.driver.find_element(By.CLASS_NAME, "_53mw")
+            video.click()
+            self.random_delay(30, 60)  # Watch time
+            
+        except Exception as e:
+            print(f"Error watching videos: {e}")
+    
+    def do_likes(self):
+        """Like random posts"""
+        try:
+            articles = self.driver.find_elements(By.TAG_NAME, "article")
+            likes_to_do = random.randint(3, 5)
+            
+            for _ in range(likes_to_do):
+                if articles:
+                    article = random.choice(articles)
+                    like_btn = article.find_elements(By.CLASS_NAME, "_52jj")[0]
+                    like_btn.find_element(By.TAG_NAME, "div").click()
+                    self.random_delay(1, 3)
+                    
+                    # Select reaction if available
+                    try:
+                        reactions = self.driver.find_elements(By.CLASS_NAME, "_uah")
+                        if reactions:
+                            random.choice(reactions).find_element(By.TAG_NAME, "i").click()
+                    except:
+                        pass
+                    
+                    self.random_delay(2, 4)
+                    
+        except Exception as e:
+            print(f"Error doing likes: {e}")
+    
+    def do_comments(self):
+        """Comment on random posts"""
+        try:
+            articles = self.driver.find_elements(By.TAG_NAME, "article")
+            comments_to_do = random.randint(2, 4)
+            sample_comments = [
+                "Nice post!", "Great content!", "Interesting!", 
+                "Thanks for sharing!", "Awesome!", "Love this!"
+            ]
+            
+            for _ in range(comments_to_do):
+                if articles:
+                    article = random.choice(articles)
+                    
+                    # Open comment section
+                    comment_btn = article.find_element(By.CLASS_NAME, "_15kq")
+                    comment_btn.click()
+                    self.random_delay(3, 5)
+                    
+                    # Type and submit comment
+                    comment_box = self.driver.find_element(By.ID, "composerInput")
+                    comment = random.choice(sample_comments)
+                    comment_box.send_keys(comment)
+                    self.random_delay(1, 2)
+                    
+                    submit_btn = self.driver.find_element(By.XPATH, '//button[@type="submit"]')
+                    submit_btn.click()
+                    self.random_delay(3, 5)
+                    
+                    self.driver.get("https://www.facebook.com/")
+                    
+        except Exception as e:
+            print(f"Error doing comments: {e}")
