@@ -1,38 +1,58 @@
-from selenium import webdriver
-from selenium.webdriver.firefox import options
-import requests
+# app.py
+from bot_functions import FacebookBot
 import csv
-from time import sleep
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 import random
+import time
 
-
-flagg=False
-counter=0
-def wait(c,d):
-    timewait = random.randint(c,d)
-    sleep(timewait)
-def set_read_to_zero():
-    with open("continue.txt",'w') as txt:
-        txt.write(str(0))
-def file_check():
-    try:
-        with open('continue.txt','r') as txt:
-            print("continue.txt present")
+def main():
+    # Initialize bot
+    bot = FacebookBot()
     
-    except FileNotFoundError:
-        set_read_to_zero()
-        print('continue.txt created')
+    # Load profiles from CSV
+    profiles = []
+    with open("profiles.csv", "r") as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            profiles.append(row[0])  # Assuming profile ID is in first column
     
-def read_continue():
-    with open("continue.txt",'r') as txt:
-        read=txt.read()
-    return int(read)
+    # Process each profile
+    for profile_id in profiles:
+        try:
+            print(f"Processing profile: {profile_id}")
+            bot.start_profile(profile_id)
+            
+            # Randomly select actions to perform
+            actions = [
+                bot.scroll_randomly,
+                bot.watch_stories,
+                bot.click_random_posts,
+                bot.click_sponsored_ads,
+                bot.check_user_profiles,
+                bot.read_comments,
+                bot.watch_videos,
+                bot.do_likes,
+                bot.do_comments
+            ]
+            
+            # Perform 3-5 random actions
+            selected_actions = random.sample(actions, k=random.randint(3, 5))
+            for action in selected_actions:
+                try:
+                    action()
+                    time.sleep(random.uniform(5, 15))  # Random delay between actions
+                except Exception as e:
+                    print(f"Error performing action: {e}")
+                    continue
+            
+            # Close profile session
+            bot.close_profile()
+            
+        except Exception as e:
+            print(f"Error processing profile {profile_id}: {e}")
+            continue
 
-
-# In[13]:
-
+if __name__ == "__main__":
+    main()
 
 def scrooling_dowon(a,b,up=True):
     number = random.randint(a,b)
